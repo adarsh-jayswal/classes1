@@ -16,7 +16,7 @@ public class countZero {
         return helper(n / 10, count);
     }
     public static void main(String[] args) {
-        int num = 102030;
+        int num = 1020300;
         System.out.println(countZero(num));
     }
 }

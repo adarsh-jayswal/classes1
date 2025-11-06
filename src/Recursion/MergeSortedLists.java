@@ -1,16 +1,13 @@
 package Recursion;
-
 class node {
     int data;
     Node next;
-
     node(int data) {
         this.data = data;
     }
 }
 
 public class MergeSortedLists {
-
     static Node merge(Node a, Node b) {
         if (a == null) return b;
         if (b == null) return a;
@@ -23,9 +20,7 @@ public class MergeSortedLists {
             return b;
         }
     }
-
     public static void main(String[] args) {
-
         Node a = new Node(1);
         a.next = new Node(3);
         a.next.next = new Node(5);
@@ -35,7 +30,6 @@ public class MergeSortedLists {
         b.next.next = new Node(6);
 
         Node head = merge(a, b);
-
         Node temp = head;
         while (temp != null) {
             System.out.print(temp.data + " ");
