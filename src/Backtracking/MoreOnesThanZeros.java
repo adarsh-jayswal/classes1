@@ -1,4 +1,6 @@
 package Backtracking;
+import java.util.Scanner;
+
 public class MoreOnesThanZeros {
 
     public static void generate(int n) {
@@ -16,9 +18,13 @@ public class MoreOnesThanZeros {
             solve(n, ones, zeros + 1, current + "0");
         }
     }
-    public static void main(String[] args) {
-        int n = 4;
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number n :-");
+        int n = sc.nextInt();
         generate(n);
     }
 }
+
+
 

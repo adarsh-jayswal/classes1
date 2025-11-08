@@ -24,8 +24,7 @@ public class letterCombinations {
         return ans;
     }
 
-    private void solve(int i, String digits, String current,
-                       List<String> ans, Map<Character, String> map) {
+    private void solve(int i, String digits, String current,List<String> ans, Map<Character, String> map) {
 
         if (i == digits.length()) {
             ans.add(current);
