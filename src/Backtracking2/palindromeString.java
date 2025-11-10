@@ -2,7 +2,7 @@ package Backtracking2;
 
 import java.util.*;
 
-public class palindromePartitions {
+public class palindromeString {
     public List<List<String>> partition(String s) {
         List<List<String>> ans = new ArrayList<>();
         solve(0, 0, s, new ArrayList<>(), ans);
@@ -40,7 +40,7 @@ public class palindromePartitions {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
-        Solution obj = new Solution();
+        palindromeString obj = new palindromeString();
         List<List<String>> result = obj.partition(s);
         System.out.println(result);
     }
