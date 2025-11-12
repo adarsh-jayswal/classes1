@@ -16,7 +16,6 @@ public class Boredom {
         }
 
         long[] dp = new long[maxVal + 1];
-
         dp[0] = 0;
         dp[1] = freq[1];
 
